@@ -1,0 +1,41 @@
+installing sass
+https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+npm rm --global gulp
+$ npm install --global gulp-cli
+$ npm install --save-dev gulp
+
+mkdir ~/bin
+	echo '\nexport PATH=~/bin:\$PATH' >> ~/.bash_profile
+	npm config set prefix $HOME
+
+var gulp = require('gulp');
+
+gulp.task('default', function() {
+  // place code for your default task here
+});
+
+npm init
+
+~/bin/gulp
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-------sass -->
+https://www.npmjs.com/package/gulp-sass
+npm install gulp-sass --save-dev
+
+'use strict';
+ 
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+ 
+gulp.task('sass', function () {
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+npm install sass-watch
+
+~/bin/gulp sass:watch

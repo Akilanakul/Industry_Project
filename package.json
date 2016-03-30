@@ -1,0 +1,22 @@
+{
+  "name": "Industry_Project",
+  "version": "1.0.0",
+  "description": "super market app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "super",
+    "market",
+    "grocery",
+    "shop"
+  ],
+  "author": "Akhila AJ",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.2.0"
+  }
+}
